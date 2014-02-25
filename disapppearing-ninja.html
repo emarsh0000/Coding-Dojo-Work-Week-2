@@ -5,10 +5,10 @@
 			<script type = "text/javascript" src = 'http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
 			<script type = "text/javascript">
 				$(document).ready(function(){
-					$('.princess').click(function(){
+					$('.princess').click(function(){  //this says you click on the pic & the pic should fade out. 'this' makes it only 1 at a time//
 						$(this).fadeOut(1000);
 					})
-					$('#button').click(function(){
+					$('#button').click(function(){   //this is for the restore button to bring all the pics back.//
 						$('.princess').fadeIn(1000);
 					})
 				})
