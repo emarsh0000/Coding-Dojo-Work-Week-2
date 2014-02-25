@@ -1,0 +1,98 @@
+<!doctype html>
+	<html>
+		<head> 
+			<link rel = "stylesheet" type = "text/css" href = "jQuery.css">
+			<script type = "text/javascript" src = 'http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+			<script type = "text/javascript">
+				$(document).ready(function(){
+					$('#fade').click(function(){
+						$('#fade').fadeOut(1000); //this when clicked, will had the '#' fade out.//
+					})	
+					$('#hide').hover(function(){ //this will hide an item when hovered over.//
+						$('#hide').hide(1000);
+					})
+					$('#appear').hover(function(){  //when you hover with your mouse, this will show a hidden item.//
+						$('#hide').show(1000);
+					})
+					$('#click').click(function(){  //this creates a toggle//
+						$('#click').toggle(1000);
+					})	
+					$('.monkey').click(function(){
+						$('#question-answer').addClass('monkey'); //this will add the css of ONE class, to the added class//
+					})
+					$('img').click(function(){
+						$('img').after('<p>How much do you LOVE this picture!</p>'); //this will show this text after you click on the img//
+					})
+					$('body').prepend('<h1>Are you ready to have some fun?!</h1>');  //this adds to the begginning of whatever section you name//
+					$('body').append('<h2> WAS THAT AMAZING OR WHAT?</h2>');  //this adds to the end of whatever section you name//
+
+	
+					$('img').click(function(){
+  						$("img").attr("width","500"); //this when clicked, will give something different attributes. (pic here gets smaller)//
+					})
+					$('h1').click(function(){
+						$('#hide').before('<p> YEAHHHH!</p>'); //this will add words/whatever you want, before a section named.//
+					})
+					$('h3').click(function(){
+						$('h3').html("What are you waiting for?!"); //this changes all the h3's to be different text completely. (a switch out)//
+					})
+					$('#question-answer').click(function(){
+						$('#question-answer').text("The answer will ALWAYS be Monkeys!"); //this replaces text already on page with new text.//
+					})
+					$('h4').click(function(){   //this slides up the title when clicked//
+						$('h4').slideUp('slow');
+					})
+					$('h4').hover(function(){  //this slides it back down. If there was a hidden object, you could slide it back in//
+						$('h4').slideDown('slow');
+					})
+					$( 'input' ).focus(function() {
+  						$(this).next( "span" ).css( "display", "inline" ).fadeOut( 1000 );  //this is to highlight and focus on the box for info//
+					})
+					$('#fadein').click(function(){
+						$('#fadein').hide(1000);
+					})
+					$('#fadein').hover(function(){ //this has the hidden opject fade back into sight//
+						$('#fadein').fadeIn(1000);
+				
+					})
+			})
+
+
+
+			</script>
+		</head>
+
+			<body>
+				<h3>NOW LET'S PLAY AROUND!</h3>
+
+				<h4>Let's Get Started!</h4>
+					<form>
+						<label for = 'box'>
+							<input type = "text" id = 'log-in' name = 'box'>  <!--this makes a box for info-->
+						</label>
+
+					<button>Submit</button>
+					</form>
+				<div>
+			
+					<ol>
+						<li id = 'hide'>I will make this go away! (hover over me!)</li> <!--this is a hover function-->
+						<li id = 'fade'>I will make THIS fade away! (click on me!)</li> <!--this is click function-->
+						<li id = 'appear'>Hover over me last!</li>
+						<li id = 'fadein'>Let's Play Hide and Seek!(click on me!)</li>
+						<li id = 'click'>Click on ME!!! (I'm a toggle!)</li> <!--toggle makes something appear and click to disappear-->
+					</ol>
+				</div>
+
+					<img src = "http://manaed.rainbowcreative.co.nz/images/manaed/products/congratulations_you_did_it.jpg">
+
+				<div class = 'monkey'>
+					What animal do we like? (Click to find out!)
+				</div>
+
+				<p id = 'question-answer'>MONKEEYYYYSS! (Click here too!)</p>
+				
+
+
+			</body>
+	</html>
