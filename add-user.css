@@ -25,3 +25,7 @@ div.container{
 .button{
 	background-color: yellow;
 }
+
+label{
+	display: block;
+}
