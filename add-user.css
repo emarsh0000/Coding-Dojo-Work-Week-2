@@ -1,0 +1,27 @@
+h1{
+	font-family: Times;
+	border-bottom: 2px solid gray;
+}
+
+html{
+	background-color: violet;
+}
+
+input{
+	display: inline-block;
+	margin-bottom: 6px;
+}
+
+table{
+	border: 2px solid black;
+	width: 900px;
+}
+
+div.container{
+	width:400px;
+	text-align: right;
+}
+
+.button{
+	background-color: yellow;
+}
